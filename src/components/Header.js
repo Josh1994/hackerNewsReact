@@ -15,7 +15,16 @@ class Header extends React.Component {
     render() {
         return (
             <header style={style.container}> 
-                <h1 style={style.title}>Hello React!</h1>
+                <div class = 'logo-wrapper'>
+                    <h1 style={style.title}>Search Hack News</h1>
+                </div>
+                <form class = 'search-wrapper'>
+                    <input
+                    name="searchBar"
+                    id = 'hnSearchBar'
+                    placeholder = 'Search stories by xx'
+                    type="input"/>
+                </form>
             </header>
         )
     }
